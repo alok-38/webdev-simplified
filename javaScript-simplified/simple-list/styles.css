@@ -1,0 +1,29 @@
+form {
+    max-width: 30%;
+    margin: 100px auto 0 auto;
+}
+
+input {
+    padding: 10px 20px;
+    margin-left: 15px;
+    outline: none;
+}
+
+button {
+    margin-left: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    outline: none;
+    background-color: burlywood;
+    border: none;
+}
+
+button:hover {
+    background-color: #8B4513;
+    color: white;
+}
+
+input:hover {
+    background-color: #f0f0f0;
+}
