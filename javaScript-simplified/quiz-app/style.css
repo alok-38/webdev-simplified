@@ -118,10 +118,8 @@ li input[type="radio"]::before {
 
 /* Style custom radio button when selected */
 li input[type="radio"]:checked::before {
-    background-color: #007bff;
+    background-color: rebeccapurple;
     /* Change background color when selected */
-    border-color: #007bff;
-    /* Change border color when selected */
 }
 
 /* Style the label text */
