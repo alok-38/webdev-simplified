@@ -14,12 +14,18 @@ const addNewListItem = () => {
     if (newItemText.trim() !== '') {
         // Create a new list element
         const newItem = document.createElement('li');
+        // Set a class
+        newItem.classList.add('list-item');
         // Set its text content to the input value
         newItem.textContent = newItemText;
         // Append the new item to the list
         divEl.appendChild(newItem);
         // Clear the input field
         inputEl.value = '';
+
+        newItem.addEventListener('click', () => {
+            newItem.remove();
+        });
     }
 };
 
