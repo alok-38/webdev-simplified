@@ -42,50 +42,90 @@
     display: block;
 }
 
-form {
-    width: 30%;
-    margin: 50px auto 0 auto;
-}
-
-form ol {
-    line-height: 1.6;
+body {
+    margin: 0;
     padding: 0;
 }
 
-li div:first-child {
-    margin-bottom: 15px;
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 2;
 }
 
-input[type="radio"] {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #ccc;
-    border-radius: 50%;
-    outline: none;
-}
-
-input[type="radio"]:checked {
-    border-color: blueviolet;
-    /* Change border color when checked */
+ol {
+    box-sizing: border-box;
+    padding: 0;
 }
 
 button {
-    display: block;
-    margin: 50px 0 0 0;
-    padding: 10px 35px;
-    border: 0;
+    width: 45%;
     cursor: pointer;
+    padding: 10px 45px;
+    border: 0;
     outline: none;
+    background-color: rebeccapurple;
     letter-spacing: 1px;
-    background-color: blueviolet;
-    color: floralwhite;
-    width: 100%;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: 600;
 }
 
 button:hover,
 button:focus {
-    background-color: rebeccapurple;
+    background-color: rgb(117, 77, 156);
+}
+
+li div:first-child {
+    font-size: 1.5em;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+/* Remove default radio button styles */
+li input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px;
+    /* Add some spacing between radio button and label */
+}
+
+/* Style custom radio button */
+li input[type="radio"]::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    /* Adjust the size of the custom radio button */
+    height: 12px;
+    border-radius: 50%;
+    /* Make it round */
+    border: 2px solid #ccc;
+    /* Add border */
+    background-color: #fff;
+    /* Set background color */
+    margin-right: 5px;
+    /* Add some spacing between radio button and label */
+}
+
+/* Style custom radio button when selected */
+li input[type="radio"]:checked::before {
+    background-color: #007bff;
+    /* Change background color when selected */
+    border-color: #007bff;
+    /* Change border color when selected */
+}
+
+/* Style the label text */
+li label {
+    display: inline-block;
+    vertical-align: middle;
 }
