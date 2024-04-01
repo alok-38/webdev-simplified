@@ -20,6 +20,7 @@ const closeButtonEl = document.querySelector('#close-modal-btn');
 const overlayEl = document.querySelector('#overlay');
 
 openButtonEl.addEventListener('click', () => {
-    modelEl.classList.add('open');
-    overlayEl.classList.add('open');
+  modelEl.classList.add('open');
+  overlayEl.classList.add('open');
 });
+
