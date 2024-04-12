@@ -53,4 +53,15 @@ input:focus {
     margin-top: 20px;
     box-sizing: border-box;
     list-style-type: none;
+    font-size: 2em;
 }
+
+/* .orange-strikethrough::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: orange;
+} */
