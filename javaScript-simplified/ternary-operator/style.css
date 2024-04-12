@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    display: flex;
+    gap: 25px;
+}
+
+input,
+button {
+    padding: 10px 45px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    outline: none;
+    border: 0;
+}
+
+button {
+    background-color: orange;
+    color: #ffffff;
+}
+
+input {
+    border: .5px solid orange;
+}
+
+button:hover,
+button:focus {
+    background-color: rgb(248, 182, 59);
+}
+
+input:hover,
+input:focus {
+    background-color: rgb(255, 234, 195);
+}
