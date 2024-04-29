@@ -1,6 +1,6 @@
 export function UserCard({ name, age, phoneNumber, address }) {
   return (
-    <div className="card">
+    <div className="card leading-10 text-2xl">
       <h2 className="name">{name}</h2>
       <div className="body">
         <div className="label">Age:</div>
