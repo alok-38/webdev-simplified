@@ -1,4 +1,5 @@
 import AddAndDeleteTodo from "./components/AddAndDeleteTodo";
+import "./App.css";
 
 export default function App() {
   return (
