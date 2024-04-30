@@ -11,7 +11,7 @@ ul {
 
 body {
 	display: flex;
-	min-height: 30vh;
+	margin-top: 50px;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
@@ -58,4 +58,5 @@ button:hover {
 
 #list ul li {
 	margin-bottom: 5px;
+	font-size: 2em;
 }
