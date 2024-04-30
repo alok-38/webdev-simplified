@@ -1,5 +1,5 @@
-import RenderingLists from "./components/RenderingLists";
+import ShoppingList from "./components/RenderingLists";
 
 export default function App() {
-  return <RenderingLists />;
+  return <ShoppingList />;
 }
