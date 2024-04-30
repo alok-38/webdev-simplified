@@ -11,7 +11,7 @@ const closeModal = () => {
 closeModalButton.addEventListener("click", closeModal);
 
 const openModal = () => {
-	modalEl.style.display = "block";
+  modalEl.style.display = "block";
   overlayEl.style.display = "block";
 };
 
