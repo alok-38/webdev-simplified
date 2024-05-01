@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main,
+.display-area {
+  max-width: 30%;
+  margin: 50px auto 0 auto;
+  height: 100px;
+}
+
+.display-area {
+  border: 3px salmon solid;
+}
+
+input {
+  width: 100%;
+  margin: 20px auto 10px auto;
+}
+
+input::placeholder {
+	text-align: center;
+}
+
+button {
+  width: 100%;
+  margin: auto;
+}
+
+input,button {
+	padding: 10px 45px;
+	cursor: pointer;
+	letter-spacing: 1.5px;
+}
