@@ -19,7 +19,7 @@ export default function ProductTable({ products }) {
   });
 
   return (
-    <table>
+    <table className="w-[500px] text-center">
       <thead>
         <tr>
           <th>Name</th>

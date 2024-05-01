@@ -10,7 +10,7 @@ export default function App() {
     { category: "Vegetables", price: "$1", stocked: true, name: "Peas" },
   ];
   return (
-    <div>
+    <div className="flex justify-center mt-28 leading-10 max-w-60 mx-auto">
       <FilterableProductTable products={PRODUCTS} />
     </div>
   );
