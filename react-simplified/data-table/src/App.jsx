@@ -9,5 +9,9 @@ export default function App() {
     { category: "Vegetables", price: "$4", stocked: false, name: "Pumpkin" },
     { category: "Vegetables", price: "$1", stocked: true, name: "Peas" },
   ];
-  return <FilterableProductTable products={PRODUCTS} />;
+  return (
+    <div>
+      <FilterableProductTable products={PRODUCTS} />
+    </div>
+  );
 }
