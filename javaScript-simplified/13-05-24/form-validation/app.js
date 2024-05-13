@@ -17,6 +17,26 @@ const termsInputElement = document.getElementById("terms");
 //      3. Ensure the password and confirmation password match
 //      4. Ensure the terms checkbox is checked
 //    TODO: If there are any errors then prevent the form from submitting and show the error messages
+formElement.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const errorContainer = [];
+  const acceptUserName = textInputElement.value.trim();
+  if (acceptUserName.length < 6) {
+    errorContainer.push("Ensure the username is at least 6 characters long");
+  }
+  const acceptPassword = passwordInputElement.value.trim();
+  if (acceptPassword.length < 10) {
+    errorContainer.push("Ensure the password is at least 10 characters long");
+  }
+  const confirmPassword = confirmPasswordInputElement.value.trim();
+  if (acceptPassword.length !== confirmPassword.length) {
+    errorContainer.push("Ensure the password and confirmation password match");
+  }
+  if (!termsInputElement.checked) {
+    errorContainer.push("Please agree to the terms");
+  }
+  console.log(errorContainer);
+});
 
 // TODO: Define this function
 function clearErrors() {
