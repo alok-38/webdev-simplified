@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .answer-item {
   list-style: lower-alpha;
 }
@@ -16,6 +22,18 @@
 
 .question-item:last-child {
   margin-bottom: 0;
+}
+
+.question-item div:first-child {
+  margin-bottom: 15px;
+}
+
+ol li {
+  margin-bottom: 10px;
+}
+
+ol {
+  padding: 0;
 }
 
 .alert-title {
@@ -49,10 +67,26 @@ form {
 }
 
 button {
-  width: 90%;
-  margin: auto;
+  width: 100%;
+  margin: 25px auto 0 auto;
   display: block;
   letter-spacing: 1.5px;
   cursor: pointer;
   padding: 10px 45px;
+  background-color: tomato;
+  color: antiquewhite;
+  outline: none;
+  border: 0;
+  border-radius: 15px;
+  height: 45px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
 }
+
+button:hover,
+button:focus {
+  background-color: rgb(225, 102, 80);
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
