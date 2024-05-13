@@ -36,6 +36,10 @@ ul button:focus {
   background-color: red;
 }
 
+ul li {
+  margin-bottom: 20px;
+}
+
 #new-todo-form label {
   margin-bottom: 15px;
   font-size: 1.5em;

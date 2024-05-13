@@ -54,6 +54,11 @@ const acceptInputItem = (e) => {
     }
   });
 
+  // Add event listener to delete button
+  deleteButton.addEventListener("click", () => {
+    ulElement.removeChild(liEl); // Remove the list item from the ul
+  });
+
   inputElement.value = "";
 };
 
