@@ -29,34 +29,43 @@ main {
 
 input,
 button {
-	width: 100%;
-	letter-spacing: 1.5px;
-	padding: 10px 45px;
-	cursor: pointer;
-	outline: none;
-	border: 0;
-	text-align: center;
-	margin-bottom: 20px;
-	background-color: transparent;
+  width: 100%;
+  letter-spacing: 1.5px;
+  padding: 10px 45px;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: transparent;
 }
 
 input {
-	outline: .5px solid orange;
-	height: 40px;
+  outline: 0.5px solid orange;
+  height: 40px;
 }
 
 button {
-	outline: .5px solid tomato;
-	height: 40px;
+  outline: 0.5px solid tomato;
+  height: 40px;
 }
 
 input:focus,
 input:hover {
-	border: 2px solid orangered;
+  border: 2px solid orangered;
 }
 
 button:hover,
 button:focus {
-	background-color: tomato;
-	color: #fff;
+  background-color: tomato;
+  color: #fff;
+}
+
+ul {
+  margin-top: 25px;
+  list-style-type: none;
+}
+
+ul li {
+  margin-bottom: 10px;
 }
