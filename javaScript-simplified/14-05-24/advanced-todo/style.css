@@ -64,8 +64,15 @@ button:focus {
 ul {
   margin-top: 25px;
   list-style-type: none;
+  display: flex;
 }
 
 ul li {
   margin-bottom: 10px;
 }
+
+.lists-container {
+  display: flex;
+  gap: 20px;
+}
+

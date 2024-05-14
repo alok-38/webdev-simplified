@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advanced TODO</title>
-    <script src="app.js" defer></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -12,11 +11,14 @@
       <h2>To-Do List</h2>
       <input type="text" id="add-task" placeholder="Add a new task" />
       <button class="add__task--btn">Add Task</button>
-      <!-- Added class attribute -->
-      <input type="text" id="add-note" placeholder="Add a note" />
-      <button class="add__task--btn">Add Note</button>
-      <button class="clear__note--btn">Clear Completed</button>
+      <input type="text" id="add-note" placeholder="Add a new note" />
+      <button class="add__note--btn">Add Note</button>
+      <button class="clear__completed--btn">Clear Completed</button>
     </main>
-    <ul></ul>
+    <div class="lists-container">
+      <ul id="task-list"></ul>
+      <ul id="note-list"></ul>
+    </div>
+    <script src="app.js" defer></script>
   </body>
 </html>
