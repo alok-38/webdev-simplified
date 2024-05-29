@@ -1,19 +1,35 @@
 const appElement = document.getElementById("app");
 
+// TodoListItem component
 function TodoListItem({ children, isComplete }) {
   return (
     <div>
-      <input type="checkbox" checked={isComplete} />
+      <input type="checkbox" defaultChecked={isComplete} />
       <label>{children}</label>
     </div>
   );
 }
 
+// TodoList component
+function TodoList({ todos }) {
+  return (
+    <div>
+      {todos.map((todo, index) => (
+        <TodoListItem key={index} isComplete={todo.isComplete}>
+          {todo.name}
+        </TodoListItem>
+      ))}
+    </div>
+  );
+}
+
+// Example todo items
+const todos = [
+  { name: "Learn React", isComplete: true },
+  { name: "Build a Todo App", isComplete: false },
+  { name: "Master JavaScript", isComplete: true }, // Changed to true
+];
+
+// Rendering the TodoList component with the todo items
 const root = ReactDOM.createRoot(appElement);
-root.render(<TodoListItem isComplete={true}>Learn React</TodoListItem>);
-
-
-// TodoListItem component
-// Props: children = name, isComplete: boolean
-// Checkbox (checked if complete)
-// Label (children value)
+root.render(<TodoList todos={todos} />);
