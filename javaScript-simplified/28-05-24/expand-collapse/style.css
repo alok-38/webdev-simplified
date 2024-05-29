@@ -19,6 +19,8 @@ body {
 .card {
   margin-bottom: 25px;
   border: 2px darkviolet dotted;
+  padding: 15px;
+  cursor: pointer;
 }
 
 .card-header {
@@ -26,4 +28,12 @@ body {
   justify-content: space-around;
   gap: 300px;
   margin-bottom: 5px;
+}
+
+.card-body {
+  display: none;
+}
+
+.card-body.show {
+  display: block;
 }
