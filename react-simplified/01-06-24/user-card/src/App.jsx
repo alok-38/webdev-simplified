@@ -1,9 +1,15 @@
 import UserCard from "./components/UserCard";
+import userdata from "./user.json";
 
 function App() {
   return (
     <>
-      <UserCard />
+      <UserCard
+        name={userdata.name}
+        age={userdata.age}
+        phoneNumber={userdata.phoneNumber}
+        address={userdata.address}
+      />
     </>
   );
 }
